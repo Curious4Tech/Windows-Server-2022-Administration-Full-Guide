@@ -133,7 +133,10 @@ Your new scope is active now.
 ## Step 9: Verify DHCP Functionality
 
 1. Use a client device on the network to verify it receives an IP address within the scope.
-2. On the client device, run the **`ipconfig /all`** command and ensure it receives the DHCP-assigned IP.
+2. On the client device, run the **`ipconfig`** command and ensure it receives the DHCP-assigned IP.
+
+
+![image](https://github.com/user-attachments/assets/b9be294f-2d6c-43eb-8b05-3995f6f503ee)
 
 ---
 
