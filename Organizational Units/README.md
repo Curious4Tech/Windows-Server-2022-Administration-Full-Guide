@@ -19,6 +19,9 @@ This guide walks you through the steps to create **Organizational Units (OUs)** 
    - In **Server Manager**, click on **Tools** in the top-right corner.
    - Select **Active Directory Users and Computers** from the dropdown. This will open the **ADUC** management console.
 
+
+![image](https://github.com/user-attachments/assets/dfc54dd3-d71f-444e-9757-51b44698df15)
+
 ---
 
 ## Step 2: Navigate to the Domain
@@ -29,6 +32,9 @@ This guide walks you through the steps to create **Organizational Units (OUs)** 
 
 2. **Select the Parent Container**:
    - Right-click the domain or an existing container where you want to create the new OU (for example, **Users** or directly under the domain name) and select **New** > **Organizational Unit**.
+
+
+![image](https://github.com/user-attachments/assets/70f7d344-63ca-42ba-8f78-778ef26f7b64)
 
 ---
 
@@ -42,12 +48,21 @@ This guide walks you through the steps to create **Organizational Units (OUs)** 
    - Optionally, you can choose to protect the OU from accidental deletion by checking the **Protect object from accidental deletion** box.
    - Click **OK** to create the OU.
 
+![image](https://github.com/user-attachments/assets/010e45de-e6ea-430b-9b76-2c83ec74ce9d)
+
+Repeate the process to create as many as **OUs** you want.
+
+
 ---
 
 ## Step 4: Verify the OU Creation
 
 1. **Check the New OU**:
    - You should now see the new OU listed under your domain or the container you chose. Expand the domain or container to verify that the OU has been successfully created.
+
+
+![image](https://github.com/user-attachments/assets/d50e9d72-d5ed-49f3-a668-a04ad9238086)
+
 
 2. **View the OU Properties (Optional)**:
    - Right-click on the newly created OU and select **Properties** to modify settings, such as delegation of control or managing object security within the OU.
@@ -71,13 +86,7 @@ This guide walks you through the steps to create **Organizational Units (OUs)** 
 - **Organizational Units (OUs)** are containers within Active Directory that help organize and manage resources in a domain. They provide a way to delegate control over specific groups of objects (users, groups, computers).
 - **OU Structure**: Plan your OU structure carefully, as it helps in applying Group Policies (GPOs) and delegating administrative permissions.
 - **Protection**: Use the **Protect object from accidental deletion** feature to prevent OUs from being mistakenly deleted.
-
----
-
-## License
-
-This guide is licensed under the [MIT License](LICENSE).
-
+  
 ---
 
 ### Conclusion
