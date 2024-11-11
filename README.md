@@ -4,18 +4,22 @@ This repository provides a comprehensive guide to administering Windows Server 2
 
 ## Table of Contents
 
-1. [COMPUTERS Creation](./COMPUTERS%20Creation)
-2. [DHCP Configuration](./DHCP%20Configuration)
-3. [DNS Configuration](./DNS%20Configuration)
-4. [GPO Configuration](./GPO%20Configuration)
-5. [GROUPS Creation](./GROUPS%20Creation)
-6. [HostName-StaticIP-RemoteDesktop](./HostName-StaticIP-RemoteDesktop)
-7. [Hyper-V Setup](./HyperV%20Setup)
-8. [IIS Setup](./IIS%20Setup)
-9. [Organizational Units](./Organizational%20Units)
-10. [USERS Creation](./USERS%20Creation)
+1. [AD DS Setup](./AD%20DS%20Setup)
+2. [COMPUTERS Creation](./COMPUTERS%20Creation)
+3. [DHCP Configuration](./DHCP%20Configuration)
+4. [DNS Configuration](./DNS%20Configuration)
+5. [GPO Configuration](./GPO%20Configuration)
+6. [GROUPS Creation](./GROUPS%20Creation)
+7. [HostName-StaticIP-RemoteDesktop](./HostName-StaticIP-RemoteDesktop)
+8. [Hyper-V Setup](./HyperV%20Setup)
+9. [IIS Setup](./IIS%20Setup)
+10. [Organizational Units](./Organizational%20Units)
+11. [USERS Creation](./USERS%20Creation)
 
 ## Section Descriptions
+
+### AD DS Setup
+This section provides instructions for setting up Active Directory Domain Services (AD DS), which includes creating and managing a domain controller. It covers the essentials of Active Directory installation, domain configuration, and user authentication management within a Windows Server 2022 environment.
 
 ### COMPUTERS Creation
 This section provides step-by-step instructions for creating and managing computer objects within Active Directory, including naming conventions and organizational strategies.
@@ -52,10 +56,6 @@ How to create and manage user accounts in Active Directory, including assigning 
 1. Navigate to each folder based on the section you're interested in.
 2. Follow the instructions provided in each folder's README.md to set up and configure various services and features on your Windows Server 2022 environment.
 3. Feel free to contribute by submitting improvements or enhancements through pull requests.
-
-## Contributing
-
-Contributions are welcome! Please fork this repository and submit a pull request with your changes. If you encounter any issues, feel free to open an issue in the repository.
 
 ## Contact
 
