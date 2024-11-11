@@ -79,6 +79,11 @@ Once the user account is created, you may want to configure additional propertie
 2. **Common Properties to Configure**:
    - **General**: Modify contact details such as phone number and email.
    - **Account**: Set logon hours, account expiration, and logon workstations.
+
+
+![image](https://github.com/user-attachments/assets/5f0a052a-9fde-4552-9083-de5147bf39d1)
+
+
    - **Profile**: Configure user profile paths, logon scripts, and home folder paths.
    - **Organization**: Specify job title, department, and company.
 
