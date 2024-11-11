@@ -31,6 +31,10 @@ This guide walks you through the steps to **install** and **set up** **IIS (Inte
    - A prompt will appear to install additional features required for IIS. Click **Add Features**.
    - Click **Next**.
 
+
+![image](https://github.com/user-attachments/assets/51d91980-e049-4259-a167-b932454bddb8)
+
+
 7. **Select Features**:
    - In the **Select features** section, you can add additional features, but the default selection for **Web Server (IIS)** is sufficient for most use cases. Click **Next**.
 
@@ -41,8 +45,12 @@ This guide walks you through the steps to **install** and **set up** **IIS (Inte
    - Review your selections and click **Install** to start the installation process.
    - The installation may take a few minutes to complete.
 
+![image](https://github.com/user-attachments/assets/3f528e2b-1e53-4dab-85ba-298d4d69f094)
+
 10. **Complete the Installation**:
     - Once the installation is complete, click **Close**.
+
+![image](https://github.com/user-attachments/assets/7c58d78d-efb8-4ba9-8190-e8f1377c6a63)
 
 ---
 
@@ -52,11 +60,20 @@ This guide walks you through the steps to **install** and **set up** **IIS (Inte
    - To confirm IIS was installed successfully, click the **Start** button and search for **IIS Manager**.
    - Open the **Internet Information Services (IIS) Manager** application.
 
+![image](https://github.com/user-attachments/assets/61ce1a2a-3711-4c07-a486-0a46318a590d)
+
+
 2. **Verify IIS Server is Running**:
    - In **IIS Manager**, under **Connections**, you should see your server name listed. This confirms that IIS is installed and running.
 
+
+![image](https://github.com/user-attachments/assets/7f382dff-abad-425b-8b24-084bfa5623b3)
+
 3. **Test IIS**:
    - Open a web browser and type `http://localhost` in the address bar. You should see the **IIS Welcome Page**, which confirms that the web server is up and running.
+
+
+![image](https://github.com/user-attachments/assets/6e8a1f2b-ec19-4708-a694-f83d4501e491)
 
 ---
 
@@ -78,8 +95,13 @@ If you want to set up a basic website, you can do so by following these steps:
 4. **Start the Website**:
    - Click **OK** to create the site. The site will now appear under **Sites** in **IIS Manager**. Right-click on it and select **Start** to launch the website.
 
+
+![image](https://github.com/user-attachments/assets/dac5d2c8-0ece-474a-a144-ebd020e8dbaf)
+
 5. **Test Your Website**:
-   - Open a web browser and enter the server’s IP address or domain name in the address bar (e.g., `http://localhost` or `http://<your-server-ip>`). You should see the website you configured.
+   - Open a web browser and enter your domain name in the address bar (e.g., `wwww.contonso.com`). You should see the website you configured.
+
+![image](https://github.com/user-attachments/assets/cb872041-b440-4491-b55b-4f18248514ba)
 
 ---
 
