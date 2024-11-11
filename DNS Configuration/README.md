@@ -19,13 +19,16 @@ This guide will help you install and configure a **DNS Server** on **Windows Ser
 5. Click **Next** and proceed through the wizard until you reach the **Confirm Installation Selections** page.
 6. Click **Install** to begin the installation process.
 7. Once the installation is complete, click **Close**.
-
+If already installed while installing **AD DS**, skip the **Step 1**.
 ---
 
 ## Step 2: Open DNS Manager
 
 1. In **Server Manager**, click on **Tools** in the top right corner.
-2. Select **DNS** from the drop-down list to open the **DNS Manager**.
+
+![image](https://github.com/user-attachments/assets/b413ee16-84db-4d0b-95e4-d2a81082b396)
+
+3. Select **DNS** from the drop-down list to open the **DNS Manager**.
 
 ---
 
