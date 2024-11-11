@@ -57,10 +57,6 @@ How to create and manage user accounts in Active Directory, including assigning 
 
 Contributions are welcome! Please fork this repository and submit a pull request with your changes. If you encounter any issues, feel free to open an issue in the repository.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
 ## Contact
 
 For any questions or feedback, feel free to reach out via [email](mailto:azizou.gnankpe-pro@protonmail.com).
