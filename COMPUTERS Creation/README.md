@@ -69,7 +69,7 @@ To add a new physical or virtual machine to the domain, follow these steps:
 
 ![image](https://github.com/user-attachments/assets/010196df-df0b-4b13-937a-ac2d74652371)
 
-   - Under **Computer name, domain, and workgroup settings**, click on **Change settings**.
+   - Under **Computer name, domain, and workgroup settings**, click on **Rename this PC (Advanced)**.
    - In the **System Properties** window, click on **Change**.
    - Select **Domain** and enter the domain name (e.g., `yourdomain.local`).
 
@@ -96,6 +96,10 @@ To add a new physical or virtual machine to the domain, follow these steps:
 ---
 
 ## Step 4: Additional Computer Configuration (Optional)
+
+Now our computer has joined the domain.
+
+![image](https://github.com/user-attachments/assets/f3a53d78-72b1-43d9-af0c-26a75e8b9351)
 
 After the computer is created and joined to the domain, you may want to configure additional settings.
 
