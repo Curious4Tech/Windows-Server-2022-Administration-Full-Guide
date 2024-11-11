@@ -63,4 +63,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Contact
 
-For any questions or feedback, feel free to reach out via [email](mailto:your.email@example.com).
+For any questions or feedback, feel free to reach out via [email](mailto:azizou.gnankpe-pro@protonmail.com).
