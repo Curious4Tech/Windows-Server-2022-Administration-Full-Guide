@@ -4,7 +4,7 @@ This repository provides a comprehensive guide to administering Windows Server 2
 
 ## Table of Contents
 1. [DNS Setup](./DNS)
-2. [DHCP Setup](./DHCP)
+2. [DHCP Setup](./DHCP Configuration)
 3. [Group Policy Setup](./GPO)
 4. [Organizational Units (OU)](./OU)
 5. [User Management](./User)
