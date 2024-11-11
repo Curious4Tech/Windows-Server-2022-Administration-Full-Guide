@@ -1,129 +1,103 @@
-# How to Create Users on Windows Server 2022
+# How to Create and Manage Users in Active Directory on Windows Server 2022
 
-This guide provides step-by-step instructions on how to create **users** on **Windows Server 2022**.
+This guide provides instructions on how to add users in **Active Directory (AD)** on **Windows Server 2022**.
 
 ## Prerequisites
 
-- **Windows Server 2022** machine with **administrator privileges**.
-- Basic knowledge of **User Management** and **Active Directory** (if using AD).
+- **Windows Server 2022** with **Active Directory Domain Services (AD DS)** installed.
+- Administrator privileges to manage users in Active Directory.
 
 ---
 
-## Step 1: Create a Local User Account
-
-If you're not using Active Directory (AD), you can create local user accounts.
+## Step 1: Open Active Directory Users and Computers
 
 1. **Open Server Manager**:
-   - Click the **Start** button and open **Server Manager**.
+   - Click on the **Start** button and select **Server Manager**.
 
-2. **Open Computer Management**:
-   - In **Server Manager**, click **Tools** in the top-right corner, then select **Computer Management**.
+2. **Access AD DS**:
+   - In **Server Manager**, go to the **Tools** menu at the top-right corner.
+   - Select **Active Directory Users and Computers** from the drop-down list.
 
-3. **Navigate to Local Users and Groups**:
-   - In the **Computer Management** window, expand **Local Users and Groups**.
-   - Click on **Users**.
 
-4. **Create a New User**:
-   - In the right-hand pane, right-click and select **New User**.
-
-5. **Fill in User Information**:
-   - In the **New User** window, fill in the following details:
-     - **User Name**: Enter the username.
-     - **Full Name**: Enter the full name (optional).
-     - **Description**: Enter a description (optional).
-     - **Password**: Enter a password. Ensure that the password meets the server's security policy.
-     - **Confirm Password**: Re-enter the password.
-
-6. **Set Password Options**:
-   - Choose from the following options:
-     - **User must change password at next logon**: This forces the user to change their password when they first log in.
-     - **User cannot change password**: This prevents the user from changing their password.
-     - **Password never expires**: This ensures that the password doesn’t expire (use with caution).
-     - **Account is disabled**: This option can be checked if you want to create a user without enabling their account immediately.
-
-7. **Create the User**:
-   - After filling out the necessary information and selecting the desired options, click **Create**.
-
-8. **Close the New User Window**:
-   - Once the user is created, click **Close** to exit the window.
+![image](https://github.com/user-attachments/assets/459d9fd7-eee4-4050-bd5e-1b6ffd50cd7b)
 
 ---
 
-## Step 2: Add User to Groups (Optional)
+## Step 2: Navigate to the Organizational Unit (OU)
 
-You can add the newly created user to specific groups to grant them certain permissions.
+1. In **Active Directory Users and Computers**, locate the **Organizational Unit (OU)** where you want to create the user.
+   - By default, you can create users in the **Users** container.
+   - You may also create your own OU for specific groups of users (e.g., **Employees**, **IT Department**, etc.).
 
-1. **Navigate to the User Properties**:
-   - In the **Local Users and Groups** > **Users** section, right-click the user and select **Properties**.
+2. Right-click the OU (e.g., **Users**) where you want to add the user, and select **New > User**.
 
-2. **Add to Groups**:
-   - In the **User Properties** window, go to the **Member Of** tab.
-   - Click **Add** to add the user to a group (e.g., **Administrators**, **Users**, or any custom groups you’ve created).
-   - Type the group name and click **OK** to add the user to that group.
 
-3. **Apply Changes**:
-   - Click **OK** to apply the changes and close the window.
+![image](https://github.com/user-attachments/assets/cd17fa5f-ed91-4994-8e57-0f1ec3644de3)
 
 ---
 
-## Step 3: Create Users via PowerShell (Alternative Method)
+## Step 3: Create a New User Account
 
-You can also create users through **PowerShell**, which is helpful for bulk creation or automation.
+1. **Enter User Details**:
+   - In the **New Object - User** dialog, fill in the following fields:
+     - **First name**: Enter the user's first name.
+     - **Initials** (optional): Enter the user's initials.
+     - **Last name**: Enter the user's last name.
+     - **Full name**: This field auto-populates but can be edited if necessary.
+     - **User logon name**: This will be the username used for logging in (e.g., `jdoe`).
 
-1. **Open PowerShell**:
-   - Right-click the **Start** button and select **Windows PowerShell (Admin)**.
+2. Click **Next** to proceed.
 
-2. **Create a New User**:
-   - Run the following command to create a new user:
-     ```powershell
-     New-LocalUser "Username" -FullName "Full Name" -Description "User Description" -Password (ConvertTo-SecureString "Password123!" -AsPlainText -Force)
-     ```
-   - Replace `"Username"`, `"Full Name"`, and `"Password123!"` with your desired values.
+![image](https://github.com/user-attachments/assets/8a1f969e-c9f7-4e83-8cd6-f1c811d47651)
 
-3. **Add User to a Group**:
-   - To add the user to a specific group, use the following command:
-     ```powershell
-     Add-LocalGroupMember -Group "Group Name" -Member "Username"
-     ```
-   - Replace `"Group Name"` with the group (e.g., `Administrators`, `Users`) and `"Username"` with the username you created.
+3. **Set Password**:
+   - Enter a password for the new user in the **Password** and **Confirm password** fields.
+   - Select the appropriate password options:
+     - **User must change password at next logon** (recommended for security).
+     - **User cannot change password**.
+     - **Password never expires**.
+     - **Account is disabled** (for accounts not yet ready for use).
+   - Click **Next** to continue.
 
----
 
-## Step 4: Create Users in Active Directory (If Using AD)
+![image](https://github.com/user-attachments/assets/377636dd-4141-4629-80c6-01c0e1d8a912)
 
-If you're using **Active Directory (AD)**, follow these steps to create users within your domain.
 
-1. **Open Active Directory Users and Computers**:
-   - In **Server Manager**, click on **Tools**, then select **Active Directory Users and Computers**.
+4. **Finish**:
+   - Review the details and click **Finish** to create the new user account.
 
-2. **Navigate to Organizational Unit (OU)**:
-   - In the **Active Directory Users and Computers** window, navigate to the desired **Organizational Unit (OU)** or **Users** folder.
-
-3. **Create a New User**:
-   - Right-click the folder or OU, select **New** and then **User**.
-
-4. **Fill in User Information**:
-   - In the **New Object – User** window, provide the following details:
-     - **First Name**: Enter the user’s first name.
-     - **Last Name**: Enter the user’s last name.
-     - **User logon name**: Enter the username (e.g., `jdoe`).
-
-5. **Set Password**:
-   - Enter the password for the user.
-   - Choose the password options (e.g., **User must change password at next logon**).
-
-6. **Create the User**:
-   - Click **Next**, then **Finish** to create the user in Active Directory.
+![image](https://github.com/user-attachments/assets/d8fe3504-c204-4fac-8833-149a713dc1b3)
 
 ---
 
-## Step 5: Test the User Account
+## Step 4: Configure Additional User Properties (Optional)
 
-To ensure the account is created correctly, try logging in with the newly created user credentials.
+Once the user account is created, you may want to configure additional properties.
 
-1. **Test the User Login**:
-   - Log off the current session and try logging in with the **new user’s credentials** to verify that the account works as expected.
+1. **Right-click** the newly created user account and select **Properties**.
 
+2. **Common Properties to Configure**:
+   - **General**: Modify contact details such as phone number and email.
+   - **Account**: Set logon hours, account expiration, and logon workstations.
+   - **Profile**: Configure user profile paths, logon scripts, and home folder paths.
+   - **Organization**: Specify job title, department, and company.
+
+3. Click **OK** to save any changes.
+
+---
+
+## Step 5: Test the New User Account
+
+1. **Log Out** or use a different device to log in with the new account.
+2. Enter the **username** and **password** for the new user account.
+3. Ensure that the user is prompted to change their password if you selected that option during setup.
+
+---
+
+## Additional Notes
+
+- **Organizational Units**: Creating OUs can help you manage users by grouping them logically, which is useful for setting group policies.
+- **Security**: Regularly review user permissions and follow best practices for password policies.
 ---
 
 ## Additional Notes
@@ -133,12 +107,6 @@ To ensure the account is created correctly, try logging in with the newly create
 
 ---
 
-## License
-
-This guide is licensed under the [MIT License](LICENSE).
-
----
-
 ### Conclusion
 
-You’ve successfully created users on **Windows Server 2022**, whether via local accounts, PowerShell, or Active Directory. Managing user accounts is an essential part of server administration, and now you have the tools to efficiently create and manage them.
+You have successfully created and configured a new user account in **Active Directory** on **Windows Server 2022**. This setup ensures centralized management and security for user accounts within your network. Managing user accounts is an essential part of server administration, and now you have the tools to efficiently create and manage them.
