@@ -227,6 +227,9 @@ To create a **Virtual Switch** in Hyper-V, follow these steps:
 3. **Install the Operating System**:
    - Follow the installation prompts to install the desired operating system on the virtual machine.
 
+
+![image](https://github.com/user-attachments/assets/b323fd2b-f6be-4deb-8e72-2c8997a6a0ad)
+
 ---
 
 ## Additional Notes
