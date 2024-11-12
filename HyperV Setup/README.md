@@ -78,7 +78,7 @@ Hyper-V is not enabled by default in Windows Server 2022, so you will need to in
    - In the **Roles** section, check the box next to **Hyper-V**.
    
 
-   ![image](https://github.com/user-attachments/assets/ae53a08c-747a-4de8-865b-cd89b651fc49)
+![image](https://github.com/user-attachments/assets/ae53a08c-747a-4de8-865b-cd89b651fc49)
 
 
 6. **Add Features**:
