@@ -27,8 +27,12 @@ To create groups, you’ll need to access the **Active Directory Users and Compu
 Once you're inside the **Active Directory Users and Computers** console, follow these steps to create a new group.
 
 1. **Navigate to the Organizational Unit (OU)**:
-   - In the **Active Directory Users and Computers** console, find the **Organizational Unit (OU)** where you want to create the group.
-   - Right-click the OU, and choose **New** > **Group**.
+   - In the **Active Directory Users and Computers** console, find the **Organizational Unit (e.g, Finance)** where you want to create the group.
+   - Right-click the **Finance**, and choose **New** > **Group**.
+
+
+![image](https://github.com/user-attachments/assets/c220a52c-3c12-41a2-84df-5b66dc656ee2)
+
 
 2. **Enter Group Information**:
    - In the **New Object - Group** window:
@@ -42,6 +46,8 @@ Once you're inside the **Active Directory Users and Computers** console, follow 
    
    - Click **OK** to create the group.
 
+![image](https://github.com/user-attachments/assets/754146af-b510-4ec4-836d-9b5678545eaa)
+
 ---
 
 ## Step 3: Add Members to the Group
@@ -54,13 +60,23 @@ After creating a group, you need to add members (users) to it.
 2. **Open the Group Properties**:
    - Right-click the group and select **Properties**.
 
+
+![image](https://github.com/user-attachments/assets/15e4bf93-35a5-428b-ab80-bfb7d5c81287)
+
+
 3. **Add Members**:
    - In the **Group Properties** window, go to the **Members** tab.
    - Click **Add** to search for users or other groups to add to this group.
    - Enter the names of users or groups you want to add and click **OK**.
 
+
+![image](https://github.com/user-attachments/assets/c34819e3-5758-4226-9fc9-4fca86a5d3cc)
+
+
 4. **Save Changes**:
    - After adding the members, click **Apply** and then **OK**.
+
+![image](https://github.com/user-attachments/assets/17b841bb-0f4b-4f48-8983-7bceaaf2af05)
 
 ---
 
@@ -70,6 +86,10 @@ Once the group is created and members have been added, it’s important to verif
 
 1. **Verify the Group in Active Directory**:
    - In **Active Directory Users and Computers**, select the group and check the **Members** tab to ensure all members have been successfully added.
+
+
+![image](https://github.com/user-attachments/assets/c4049647-a2d2-4b38-b3ef-8ec874e6c556)
+
 
 2. **Check Group Permissions**:
    - If you are using this group to manage permissions (e.g., for file shares or applications), verify that the group has the correct permissions assigned in the relevant locations (e.g., shared folders or applications).
@@ -88,14 +108,6 @@ Once the group is created and members have been added, it’s important to verif
    - **Distribution Groups**: Used for email distribution lists but do not grant security permissions.
 
 ---
-
-## License
-
-This guide is licensed under the [MIT License](LICENSE).
-
----
-
 ### Conclusion
 
 You’ve successfully created a group on **Windows Server 2022**, added members to the group, and verified the setup. This process is essential for organizing users in your Active Directory environment and managing permissions effectively.
-
