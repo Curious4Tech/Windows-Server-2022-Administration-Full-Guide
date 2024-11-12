@@ -69,7 +69,7 @@ After creating the GPO, you need to edit it to apply specific settings.
      - **Computer Configuration**: Settings that apply to computers (e.g., security settings, software installation).
      - **User Configuration**: Settings that apply to user accounts (e.g., desktop settings, folder redirection).
    - Navigate through the sections in the **Editor** and configure the settings you require. For example:
-     - **Security Settings**: Under **`Computer Configuration > Policies > Windows Settings > Security Settings>Account Policies>Paaword Policy`**, you can configure password policies, user rights assignments, etc.
+     - **Security Settings**: Under **`Computer Configuration > Policies > Windows Settings > Security Settings>Account Policies>Password Policy`**, you can configure password policies, user rights assignments, etc.
   
    ![image](https://github.com/user-attachments/assets/6bd5d16e-87a1-41da-8afa-3f891d37fe34)
 
