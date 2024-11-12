@@ -73,7 +73,7 @@ After creating the GPO, you need to edit it to apply specific settings.
   
    ![image](https://github.com/user-attachments/assets/6bd5d16e-87a1-41da-8afa-3f891d37fe34)
 
-     - **Software Settings**: Under **`User Configuration > Policies >Software Settings> Software Installation`**, you can configure desktop settings, start menu options, etc. Right-click on the empty space, then click **`New`** and then click on **`package`**. Follow the wizard to complete the configuration.
+     - **Software Settings**: Under **`User Configuration > Policies >Software Settings> Software Installation`**, you can configure desktop settings, start menu options, etc. Right-click on the empty space, then click **`New`** and then click on **`Package ...`**. Follow the instructions to complete the configuration.
 
 ![image](https://github.com/user-attachments/assets/1d8f31d7-7c3b-4732-b75b-6ad39388fcdc)
 
